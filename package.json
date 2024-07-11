@@ -1,0 +1,24 @@
+{
+  "name": "axios_project",
+  "version": "1.0.0",
+  "description": "Learning to make a request from our server to other server through AXIOS",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "AXIOS",
+    "API",
+    "Request",
+    "Backend"
+  ],
+  "author": "Deepthi Dasappa",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}

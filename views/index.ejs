@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bored Activity</title>
+    <link rel="stylesheet" href="styles.css"></link>
+</head>
+<body>
+        <div class="container">
+                <h1>Let's help you out in finding the best thing to do, during the best of your time👁️‍🗨️</h1>  
+           
+              <form class="form" action="/go" method="POST">
+                <select name="randomType" id="activity">
+                  <option>Activity Type</option>
+                  <option>recreational</option>
+                  <option>music</option>
+                  <option>cooking</option>
+                  <option>charity</option>
+                  <option>education</option>
+                  <option>social</option>
+                  <option>busywork</option>
+                </select>
+                <select name="participants" id="activity">
+                <option>No of Participants</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                </select>
+                <button type="submit" class="form-submit">Go</button>
+              </form>
+          
+            <section id="cards" class="cards">
+                <article class="card-item">
+                  <h2 class="card-activity">
+                    <%= data.activity %>
+                  </h2>
+                  <div class="card-info">
+                    <span class="card-type"><%= data.type%></span>
+                    <span class="card-participants"><%= data.participants %></span>
+                  </div>
+                </article>
+            </section>
+        </div>
+</body>
+</html>
